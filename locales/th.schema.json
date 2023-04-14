@@ -382,14 +382,6 @@
           "content": "เพิ่มคำอธิบายแบรนด์ไปยังส่วนท้ายของหน้าร้านคุณ"
         }
       }
-    },
-    "animations": {
-      "name": "ภาพเคลื่อนไหว",
-      "settings": {
-        "animations_reveal_on_scroll": {
-          "label": "แสดงส่วนเมื่อเลื่อนหน้าจอ"
-        }
-      }
     }
   },
   "sections": {
@@ -434,34 +426,6 @@
           "label": "ขนาดใหญ่พิเศษ"
         }
       },
-      "image_shape": {
-        "options__1": {
-          "label": "ค่าเริ่มต้น"
-        },
-        "options__2": {
-          "label": "รูปโค้ง"
-        },
-        "options__3": {
-          "label": "หยดน้ำ"
-        },
-        "options__4": {
-          "label": "บั้งชี้ไปทางซ้าย"
-        },
-        "options__5": {
-          "label": "บั้งชี้ไปทางขวา"
-        },
-        "options__6": {
-          "label": "เพชร"
-        },
-        "options__7": {
-          "label": "สี่เหลี่ยมด้านขนาน"
-        },
-        "options__8": {
-          "label": "โค้งมน"
-        },
-        "label": "รูปทรงภาพ",
-        "info": "บัตรรูปแบบมาตรฐานจะไม่มีขอบเมื่อเปิดใช้รูปทรงภาพ"
-      },
       "animation": {
         "content": "ภาพเคลื่อนไหว",
         "image_behavior": {
@@ -500,14 +464,6 @@
             }
           },
           "name": "การประกาศ"
-        }
-      },
-      "settings": {
-        "auto_rotate": {
-          "label": "หมุนสไลด์อัตโนมัติ"
-        },
-        "change_slides_speed": {
-          "label": "เปลี่ยนสไลด์ทุก"
         }
       }
     },
@@ -904,7 +860,7 @@
         },
         "header__9": {
           "content": "ติดตามบน Shop",
-          "info": "คุณต้องเปิดใช้งาน Shop Pay เพื่อให้ลูกค้าสามารถติดตามร้านค้าของคุณในแอป Shop ได้จากหน้าร้าน [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+          "info": "แสดงปุ่มติดตามบนหน้าร้านของคุณในแอป Shop [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
         },
         "enable_follow_on_shop": {
           "label": "เปิดใช้งานการติดตามบน Shop"
@@ -1015,6 +971,10 @@
         },
         "stack_images_on_mobile": {
           "label": "การรวมภาพบนมือถือ"
+        },
+        "adapt_height_first_image": {
+          "label": "ปรับความสูงของส่วนตามขนาดของรูปภาพแรก",
+          "info": "เขียนทับการตั้งค่าความสูงของแบนเนอร์รูปภาพเมื่อทำเครื่องหมาย"
         },
         "show_text_box": {
           "label": "แสดงคอนเทนเนอร์บนเดสก์ท็อป"
@@ -1647,7 +1607,7 @@
             },
             "show_gift_card_recipient": {
               "label": "แสดงแบบฟอร์มข้อมูลผู้รับสำหรับผลิตภัณฑ์บัตรของขวัญ",
-              "info": "คุณสามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญตรงถึงผู้รับพร้อมข้อความของตนเองได้ [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+              "info": "สามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญตรงถึงผู้รับพร้อมข้อความของตนเองได้"
             }
           },
           "name": "ปุ่มซื้อ"
@@ -2505,6 +2465,10 @@
             "show_dynamic_checkout": {
               "label": "แสดงปุ่มชำระเงินแบบไดนามิก",
               "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณจะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "แสดงแบบฟอร์มผู้รับสำหรับผลิตภัณฑ์บัตรของขวัญ",
+              "info": "สามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญให้ผู้รับพร้อมข้อความของตนเองได้เมื่อเปิดใช้งานแล้ว"
             }
           }
         },
