@@ -10,6 +10,7 @@ $item-count: 7;
   align-content: center;
   justify-content: center;
   justify-items: center;
+  padding: 0;
   height: 100%;
 }
 
@@ -23,26 +24,13 @@ $item-count: 7;
 
 .banner-list {
   position: absolute;
-  height: $height * $item-count;
-  top: (-$height);
-  animation-name: titleflip;
-  animation: titleflip 8s linear infinite;
-  }
-
-.banner-list,
-.list-item {
-  margin: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-  width: 100%;
+  animation-name: flip;
+  animation: flip 8s linear infinite;
 }
 
 .list-item {
   opacity: 0;
   list-style-type: none;
-  margin: 0px 0 1px 0;
-  padding: 0px 0 0px 0;
   font-size: 4em;
   font-weight: 700;
   text-transform: uppercase;
@@ -51,6 +39,9 @@ $item-count: 7;
   line-height: $height;
   animation-name: fadein;
   animation: fadein 8s infinite;
+  span {
+    font-weight: 500;
+  }
 }
 
 @keyframes fadein {
@@ -108,10 +99,11 @@ $item-count: 7;
   }         
 }
 
-@keyframes titleflip {
+
+@keyframes flip {
   0%,
   15% {
-    top: 0;
+    top: -20;
   }
   15%,
   20% {
@@ -164,11 +156,11 @@ $item-count: 7;
 }
 
 .vid-wrapper {
-  height: 50%;
+  height: 70vh;
   width: 100vw;
+  overflow: hidden;    
   img {
-    height: 70%;
+    height: 100%;
     width: 100vw;
-    overflow: hidden;    
   }
 }

@@ -3,21 +3,22 @@
 .join-the-loop {
   display: flex;
   flex-direction: column;
+  row-gap: 3rem;
+  justify-content: center;
   margin: auto;
   width: 80vw;
 }
 
 .loop-heading {
-    font-family: 'FONTSPRING DEMO - The Seasons';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3em;
-    line-height: 74px;
-
-    /* identical to box height */
-    text-align: center;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'FONTSPRING DEMO - The Seasons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 74px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
 }
 
 .loop-subheading {
@@ -28,44 +29,46 @@
     align-self: auto;
     text-align: center;
     line-height: normal;
+    margin-bottom: 2em;
     p {
-        font-family: 'Helvetica';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.75em;
-        line-height: 37px;
-        text-align: center;
-        color: #000000;
-        margin-top: 0;
-        margin-bottom: 0;
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.7em;
+      line-height: 1.25em;
+      text-align: center;
+      color: #000000;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 }
 
 .loop-body {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2em;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  column-gap: 10rem;
 }
 
 .loop-body-left {
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: end;
   width: 100%;
 
   h3 {
-    font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.25em;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    text-transform: uppercase;
-    color: #000000;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0;
   }
 }
 
@@ -77,8 +80,14 @@
   line-height: 23px;
   text-align: right;
   color: #000000;
+  width: 340px;
+  margin-top: 0;
+  margin-bottom: 0;
   .img-wrapper {
     max-width: 100%;
+    img {
+      width: 340px;
+    }
   }  
 }
 
@@ -86,10 +95,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
+  height: 85vh;
   .button-list {
     border-left: 3px solid #8D9196;
-    margin-left: 10%;
     height: 100%;
     width: 100%;
     display: flex;
@@ -97,12 +105,15 @@
     justify-content: space-around;
     #button-1 {
       background-image: url(1-default.png);
+      height: 80px;
     }
     #button-2 {
       background-image: url(2-default.png);
+      height: 80px;
     }
     #button-3 {
       background-image: url(3-default.png);
+      height: 80px;
     }
     #button-1:hover {
       background-image: url(1-active.png);
@@ -130,13 +141,14 @@
 
 .loop-button {
   outline: none;
+  cursor: pointer;
   background: transparent;
   border: none;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
   position: relative;
-  transform: translateX(-50px);
+  transform: translateX(-40px);
 }
 
 .loop-button-text {
@@ -161,7 +173,7 @@
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 46px;
   height: 100%;
   max-height: 100%;
@@ -194,26 +206,43 @@
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
-  height: 50px;
+  font-size: 30px;
+  line-height: 30px;
+  height: 30px;
   text-transform: uppercase;
   color: #000000;
   overflow: hidden;
   margin: auto;
   ul {
     margin: 0 0.625rem;
-    padding-left: 7px;
+    padding-left: 4px;
     animation: scrollUp 6s infinite;
     li {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      height: 50px;
+      height: 30px;
       list-style: none; 
       width: 100%;
     }
   }
+}
+
+.galore-join-button {
+  padding: 10px 60px;
+  gap: 10px;
+  width: 276px;
+  height: 57px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: #000000;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+
+.galore-join-button:hover {
+  background: #4A4A4A;
 }
 
 $item-count: 5;

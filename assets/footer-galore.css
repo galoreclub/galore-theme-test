@@ -1,0 +1,28 @@
+.footer-galore {
+  display: flex;
+  flex-direction: row;
+  padding: 4em;
+  column-gap: 4em;
+}
+
+.footer-col, .footer-subheading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2em;
+  text-transform: uppercase;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.footer-subheading {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.footer-col a {
+  text-decoration: none;
+}
