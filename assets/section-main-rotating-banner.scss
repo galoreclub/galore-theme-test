@@ -1,0 +1,174 @@
+// ROTATING BANNER
+
+$height: 80px;
+$item-count: 7;
+
+.rotating-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.banner-container {
+  height: $height;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-left: 2em;
+}
+
+.banner-list {
+  position: absolute;
+  height: $height * $item-count;
+  top: (-$height);
+  animation-name: titleflip;
+  animation: titleflip 8s linear infinite;
+  }
+
+.banner-list,
+.list-item {
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.list-item {
+  opacity: 0;
+  list-style-type: none;
+  margin: 0px 0 1px 0;
+  padding: 0px 0 0px 0;
+  font-size: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  height: $height;
+  line-height: $height;
+  animation-name: fadein;
+  animation: fadein 8s infinite;
+}
+
+@keyframes fadein {
+  0%,
+  15% {
+    opacity: 0;
+  }
+  15%,
+  20% {
+    opacity: 1;
+  }
+  20%,
+  30% {
+    // opacity: 0;
+  }
+  30%,
+  35% {
+    opacity: 1;
+  }
+  35%,
+  45% {
+    // opacity: 0;
+  }
+  45%,
+  50% {
+    opacity: 1;
+  }
+  50%,
+  60% {
+    // opacity: 0;
+  }
+  60%,
+  65% {
+    opacity: 1;
+  }
+  65%,
+  75% {
+    // opacity: 0;
+  }
+  75%,
+  80% {
+    opacity: 1;
+  }
+  80%,
+  90% {
+    // opacity: 0;
+  }
+  90%,
+  100% {
+    opacity: 1;
+  }
+  100%,
+  0% {
+    opacity: 0;
+  }         
+}
+
+@keyframes titleflip {
+  0%,
+  15% {
+    top: 0;
+  }
+  15%,
+  20% {
+    top: 0;
+  }
+  20%,
+  30% {
+    top: -$height * 2;
+  }
+  30%,
+  35% {
+    top: -$height * 2;
+  }
+  35%,
+  45% {
+    top: -$height * 3;
+  }
+  45%,
+  50% {
+    top: -$height * 3;
+  }
+  50%,
+  60% {
+    top: -$height * 4;
+  }
+  60%,
+  65% {
+    top: -$height * 4;
+  }
+  65%,
+  75% {
+    top: -$height * 5;
+  }
+  75%,
+  80% {
+    top: -$height * 5;
+  }
+  80%,
+  90% {
+    top: -$height * 6;
+  }
+  90%,
+  100% {
+    top: -$height * 6;
+  }
+  100%,
+  0% {
+    top: 0;
+  }         
+}
+
+.vid-wrapper {
+  height: 50%;
+  width: 100vw;
+  img {
+    height: 70%;
+    width: 100vw;
+    overflow: hidden;    
+  }
+}

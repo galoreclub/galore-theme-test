@@ -1,16 +1,26 @@
 {
   "sections": {
     "rotating_banner": {
-      "type": "rotating-banner",
+      "type": "main-rotating-banner",
       "settings":{}
     },
-    "main_landing": {
-      "type": "main-landing",
+    "join_the_loop": {
+      "type": "main-join-the-loop",
       "settings":{}
+    },
+    "who_we_are": {
+      "type": "main-who-we-are",
+      "settings":{}
+    },
+    "how_we_do_it": {
+      "type": "main-how-we-do-it",
+      "settings": {}
     }
   },
   "order": [
     "rotating_banner",
-    "main_landing"
+    "who_we_are",
+    "join_the_loop",
+    "how_we_do_it"
   ]
 }
