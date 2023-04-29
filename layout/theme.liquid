@@ -377,11 +377,11 @@
       }
 
       body {
-        display: grid;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 1440px;
         min-height: 100%;
-        margin: 0;
         font-size: 1.5rem;
         letter-spacing: 0.06rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
@@ -390,9 +390,27 @@
         font-weight: var(--font-body-weight);
       }
 
-      @media screen and (min-width: 750px) {
+      @media screen and (max-width: 1440px) {
         body {
-          font-size: 1.6rem;
+          width: 1080px;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        body {
+          width: 780px;
+        }
+      }
+
+      @media screen and (max-width: 780px) {
+        body {
+          width: 480px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        body {
+          width: 360px;
         }
       }
     {% endstyle %}

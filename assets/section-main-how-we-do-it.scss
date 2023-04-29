@@ -2,8 +2,6 @@
 
 .how-we-do-it {
   display: flex;
-  margin: auto;
-  width: 80vw;
   padding-bottom: 150px;
   .wrapper {
     display: flex;
@@ -12,8 +10,8 @@
       font-family: 'FONTSPRING DEMO - The Seasons';
       font-style: normal;
       font-weight: 400;
-      font-size: 3em;
-      line-height: 74px;
+      font-size: 50px;
+      line-height: 60px;
       color: #000000;
     }
     .box {
@@ -52,7 +50,7 @@
           font-family: 'Helvetica';
           font-style: normal;
           font-weight: 700;
-          font-size: 1.75em;
+          font-size: 45px;
           margin-bottom: 0;
           text-transform: uppercase;
           color: #000000;
@@ -61,8 +59,8 @@
           font-family: 'Helvetica';
           font-style: normal;
           font-weight: 400;
-          font-size: 1.35em;
-          line-height: 1em;
+          font-size: 20px;
+          line-height: 26px;
           color: #000000;
         }
       }
@@ -76,5 +74,49 @@
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how-we-do-it {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    .wrapper {
+      h2 {
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+      }
+      .box {
+        flex-direction: column;
+        row-gap: 50px;
+        .left {
+          width: 100%;
+          margin-bottom: 50px;
+          .box {
+            width: 70%;
+            .wrapper {
+              transform: translate(50%, 50%);
+              img {
+                animation: rotation 15s infinite linear;
+              }
+            }
+          }
+        }
+        .right {
+          width: 80vw;
+          margin: auto;
+          padding: 0;
+          h3 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
   }
 }

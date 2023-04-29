@@ -288,7 +288,7 @@ html.no-js .no-js-hidden {
   }
 
   .page-width--narrow {
-    max-width: 72.6rem;
+    max-width: 100%;
     padding: 0;
   }
 

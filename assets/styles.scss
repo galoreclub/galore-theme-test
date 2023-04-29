@@ -1,4 +1,565 @@
 .section-main {
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .section-main {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.D101 {
+  font-family: 'FONTSPRING DEMO - The Seasons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 74px;
+  color: #000000;
+}
+
+.D102 {
+  font-family: 'FONTSPRING DEMO - The Seasons';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 78px;
+  color: #000000;
+}
+
+.D201 {
+  font-family: 'FONTSPRING DEMO - The Seasons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  color: #000000;
+}
+
+.D202 {
+  font-family: 'FONTSPRING DEMO - The Seasons';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.H101 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H102 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H103 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.H201 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H202 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H203 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.H301 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H302 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H303 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.H401 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H402 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.H403 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.S101 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #000000;
+}
+
+.S102 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #000000;
+}
+
+.S103 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.S201 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.S202 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.S203 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.S301 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;  
+  color: #000000;
+}
+
+.S302 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.S303 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.S401 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.S402 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.S403 {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.B101 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #000000; 
+}
+
+.P101 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.P102 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.P201 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.P202 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.P301 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.P302 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.P401 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.P402 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.P501 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.P502 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.BREADCRUMBS01 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.BREADCRUMBS02 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.BREADCRUMBS03 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.BREADCRUMBS04 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.CAPTIONS01 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.L01 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.L02 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.F01 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.F02 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.F03 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.F04 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
 }

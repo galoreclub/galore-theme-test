@@ -26,3 +26,33 @@
 .footer-col a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+  .footer-galore {
+    margin-top: 0.5rem;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-content: stretch;
+    justify-content: stretch;
+    margin: auto;
+    padding: 0;
+    gap: 0;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-subheading {
+    font-size: 14px;
+  }
+  
+  .footer-col a {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

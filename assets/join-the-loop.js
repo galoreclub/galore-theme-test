@@ -23,38 +23,32 @@ const frames = [frame1, frame2, frame3];
 
 const scrollbox = document.querySelector('.scroll-box');
 
-// listeners
-button1.addEventListener('click', selectFrame1)
-button2.addEventListener('click', selectFrame2)
-button3.addEventListener('click', selectFrame3)
+// // listeners
+// button1.addEventListener('click', selectFrame1)
+// button2.addEventListener('click', selectFrame2)
+// button3.addEventListener('click', selectFrame3)
 
 // functions
-function selectFrame1(e) {
+function selectFrame1() {
   resetButtons();
   resetFrames();
-  e.preventDefault();
-  e.stopPropagation();
   button1.classList.add('selected');
   button1txt.classList.add('selected');
   frame1.classList.remove('hidden');
 }
 
-function selectFrame2(e) {
+function selectFrame2() {
   resetButtons();
   resetFrames();
-  e.preventDefault();
-  e.stopPropagation();
   button2.classList.add('selected');
   button2txt.classList.add('selected');
   scrollbox.classList.remove('hidden');
   frame2.classList.remove('hidden');
 }
 
-function selectFrame3(e) {
+function selectFrame3() {
   resetButtons();
   resetFrames();
-  e.preventDefault();
-  e.stopPropagation();
   button3.classList.add('selected');
   button3txt.classList.add('selected');
   frame3.classList.remove('hidden');
@@ -72,3 +66,20 @@ function resetFrames() {
     element.classList.add('hidden');
   })
 }
+
+function loop1() {
+  selectFrame1();
+  setTimeout(loop2, 6000);  
+}
+
+function loop2() {
+  selectFrame2();
+  setTimeout(loop3, 6000);
+}
+
+function loop3() {
+  selectFrame3();
+  setTimeout(loop1, 6000);
+}
+
+setTimeout(loop2, 6000);
