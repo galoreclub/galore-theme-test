@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "rotating_banner": {
+      "type": "main-rotating-banner",
+      "settings":{}
+    },
+    "who_we_are": {
+      "type": "main-who-we-are",
+      "settings":{}
+    },
+    "buy_rent_sell": {
+      "type": "main-buy-rent-sell",
+      "settings": {}
+    }
+  },
+  "order": [
+    "rotating_banner",
+    "who_we_are",
+    "buy_rent_sell"
+  ]
+}

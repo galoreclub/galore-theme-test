@@ -16,6 +16,38 @@
   }
 }
 
+.galore-button {
+  padding: 10px 60px;
+  gap: 10px;
+  width: 276px;
+  height: 57px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: #000000;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.galore-button-sm {
+  padding: 10px 60px;
+  gap: 10px;
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #000000;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.galore-button:hover {
+  background: #4A4A4A;
+}
+
 .D101 {
   font-family: 'FONTSPRING DEMO - The Seasons';
   font-style: normal;
