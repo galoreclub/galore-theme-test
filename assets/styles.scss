@@ -30,6 +30,19 @@
   text-decoration: none;
 }
 
+.galore-button-md {
+  padding: 10px 60px;
+  gap: 10px;
+  width: 240px;
+  height: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #000000;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .galore-button-sm {
   padding: 10px 60px;
   gap: 10px;
@@ -44,7 +57,7 @@
   text-decoration: none;
 }
 
-.galore-button:hover {
+.galore-button:hover, .galore-button-md:hover, .galore-button-sm:hover {
   background: #4A4A4A;
 }
 

@@ -2,15 +2,18 @@
   "sections": {
     "rotating_banner": {
       "type": "main-rotating-banner",
-      "settings":{}
+      "settings": {
+      }
     },
     "who_we_are": {
       "type": "main-who-we-are",
-      "settings":{}
+      "settings": {
+      }
     },
     "buy_rent_sell": {
       "type": "main-buy-rent-sell",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

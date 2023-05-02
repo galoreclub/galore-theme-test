@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-banner-how-it-works",
+      "settings": {
+      }
+    },
+    "join_the_loop": {
+      "type": "main-join-the-loop",
+      "settings": {
+      }
+    },
+    "how_it_works": {
+      "type": "main-how-it-works",
+      "settings": {
+      }
+    }   
+  },
+  "order": [
+    "banner",
+    "join_the_loop",
+    "how_it_works"
+  ]
+}
