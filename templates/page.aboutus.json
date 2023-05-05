@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-banner",
+      "settings": {
+      }
+    },
+    "about_us": {
+      "type": "main-about-us",
+      "settings": {
+      }
+    }   
+  },
+  "order": [
+    "banner",
+    "about_us"
+  ]
+}

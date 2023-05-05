@@ -1,7 +1,7 @@
 {
   "sections": {
     "banner": {
-      "type": "main-banner-how-it-works",
+      "type": "main-banner",
       "settings": {
       }
     },

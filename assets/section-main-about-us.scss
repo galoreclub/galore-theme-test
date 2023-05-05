@@ -1,0 +1,106 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 80%;
+  margin: auto;
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .box {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: left;
+      row-gap: 0;
+      h3 {
+        font-family: 'FONTSPRING DEMO - The Seasons';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 33px;
+        line-height: 36px;
+      }
+      p {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    img {
+      width: 40%;
+      object-fit: contain;
+    }
+  }
+}
+
+.wrapper {
+  width: 40%;
+  background: #1C1C1E;;
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us {
+    width: 90%;
+    .section {
+      flex-direction: column;
+      position: relative;
+      padding-top: 120px;
+      .box {
+        width: 100%;
+        img {
+          width: 50%
+        }
+        h3 {
+          font-size: 16px;
+          margin-bottom: 0;
+          width: 50%;
+        }
+        p {
+          font-size: 10px;
+        } 
+      }
+    }
+    .section:nth-child(odd) {
+      img {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      h3 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      p {
+        bottom: 0;
+      }
+    }
+    .section:nth-child(even) {
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      h3 {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      p {
+        bottom: 0;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,16 @@
+{{ 'section-main-banner.scss.css' | asset_url | stylesheet_tag }}
+
+<div class="galore-banner section main">
+  <div class="vid-wrapper">
+    {% if page.url == '/pages/how-it-works' %}
+      <img src="{{ "Main_Vid_5.gif" | asset_url }}" alt="">
+    {% endif %}
+    {% if page.url == '/pages/about-us' %}
+      <img src="{{ "Main_Vid_4.gif" | asset_url }}" alt="">
+    {% endif %}
+    <p>{{ page.title }}</p>
+  </div>
+  <div class="breadcrumbs">home |
+    <span>{{ page.title }}</span>
+  </div>
+</div>
