@@ -37,6 +37,10 @@
   }
 }
 
+.animated-stamp {
+  animation: rotation 15s infinite linear;
+}
+
 .galore-button {
   padding: 10px 60px;
   width: fit-content;
@@ -49,13 +53,22 @@
   }
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .authentication {
     width: 90%;
     .section {
       flex-direction: column;
       position: relative;
-      padding-top: 140px;
+      padding-top: 150px;
       .box {
         width: 100%;
         img {

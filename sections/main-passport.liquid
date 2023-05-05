@@ -1,0 +1,63 @@
+{{ 'section-main-passport.scss.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'main-passport.js' | asset_url }}" defer="defer"></script>
+
+<div class="passport section-main">
+  <div class="section">
+    <div class="box">
+      <h3>What is a digital passport?</h3>
+      <p>Galore’s Digital Passport allows members of the Galore Club to explore their handbags’ histories and verify their authenticity anywhere, anytime. After you buy or rent a handbag, scan its unique NFC (Near Field Communication) tag to get exclusive insights about your handbag in real time.</p>
+    </div>
+    <img src="{{ "passport1.png" | asset_url}}" alt="">
+  </div>
+  <div class="section">
+    <img src="{{ "passport2.png" | asset_url }}" alt="">
+    <div class="box">
+      <h3>Circular Fashion</h3>
+      <p>Join the Galore Club to embrace circular fashion and a more sustainable way of consuming. With each bag purchase, you not only own a stylish and high-quality accessory, but also the opportunity to sell it back to the club. This closed-loop system is the essence of circular fashion, where buying, renting, reselling, and repeating all play a part in reducing waste and promoting sustainability. By becoming a member, you're making a conscious choice to support a better future for fashion.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="box">
+      <h3>Why is our ecosystem effective?</h3>
+      <p>Circular fashion is an innovative model for sustainable and responsible consumption. It involves reusing, repairing, refurbishing, and recycling clothing and textiles, reducing the need for virgin materials and minimizing waste. This model encourages individuals to be mindful of their fashion choices and prioritize quality over quantity, leading to a more sustainable fashion industry. By participating in circular fashion, individuals can play a vital role in reducing their environmental impact and promoting a more responsible and sustainable future for fashion.</p>
+    </div>
+    <img src="{{ "passport3.png" | asset_url}}" alt="">
+  </div>
+  <div class="dropdown-wrapper">
+    <h2>How to use your Digital Passport</h2>
+    <div class="dropdown">
+      <div>
+        <span>scan your handbag's nfc tag</span>
+        <span>
+          <img src="{{ 'arrow.png' | asset_url }}" alt="">
+        </span>
+      </div>
+      <ul class="dropdown_menu dropdown_menu--animated">
+        <li>When you receive your Galore handbag, use your smartphone to scan the NFC tag attached to the keychain. From there, you will be directed with a link to your bag’s unique Digital Passport.</li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div>
+        <span>what you'll explore</span>
+        <span>
+          <img src="{{ 'arrow.png' | asset_url }}" alt="">
+        </span>
+      </div>
+      <ul class="dropdown_menu dropdown_menu--animated">
+        <li>When you enter the digital passport you will be able to access detailed specifications of your unique handbag, including: authentication details, history, service details, and care instructions. At Galore we’re all about transparency, so we want to make sure you know everything about your handbag. We’re also here to help, at any step of the way. From the digital passport you’re able to contact us if you have any questions, and you can even request a quote for a service or repair for your bag. You’ll send it back to us, and we’ll take care of the rest.</li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div>
+        <span>access again at any time</span>
+        <span>
+          <img src="{{ 'arrow.png' | asset_url }}" alt="">
+        </span>
+      </div>
+      <ul class="dropdown_menu dropdown_menu--animated">
+        <li>Your digital passport is unique to you and to your bag, and you can access the information at any time. Just scan your NFC tag and you’ll be connected.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>

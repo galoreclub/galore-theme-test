@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-banner",
+      "settings": {
+      }
+    },
+    "passort": {
+      "type": "main-passport",
+      "settings": {
+      }
+    }   
+  },
+  "order": [
+    "banner",
+    "passort"
+  ]
+}

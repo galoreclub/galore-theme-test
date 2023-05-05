@@ -2,16 +2,44 @@
 
 <div class="galore-banner section main">
   <div class="vid-wrapper">
+    {% if page.url == '/pages/digital-passport' %}
+      <div class="passport-banner">
+        <div class="left">
+          <img
+            class="auth-stamp"
+            src="{{ 'auth-stamp-white.png' | asset_url }}"
+            alt="">
+          <img
+            class="passport-img"
+            src="{{ 'passport.png' | asset_url }}"
+            alt="">
+        </div>
+        <div class="right">
+          <p class="passport-title">{{ page.title }}</p>
+        </div>
+      </div>
+    {% endif %}
     {% if page.url == '/pages/authentication' %}
-      <img src="{{ "Main_Vid_6.gif" | asset_url }}" alt="">
+      <img
+        class="banner-gif"
+        src="{{ "Main_Vid_6.gif" | asset_url }}"
+        alt="">
     {% endif %}
     {% if page.url == '/pages/how-it-works' %}
-      <img src="{{ "Main_Vid_5.gif" | asset_url }}" alt="">
+      <img
+        class="banner-gif"
+        src="{{ "Main_Vid_5.gif" | asset_url }}"
+        alt="">
     {% endif %}
     {% if page.url == '/pages/about-us' %}
-      <img src="{{ "Main_Vid_4.gif" | asset_url }}" alt="">
+      <img
+        class="banner-gif"
+        src="{{ "Main_Vid_4.gif" | asset_url }}"
+        alt="">
     {% endif %}
-    <p>{{ page.title }}</p>
+    {% unless page.url == '/pages/digital-passport' %}
+      <p>{{ page.title }}</p>
+    {% endunless %}
   </div>
   <div class="breadcrumbs">home |
     <span>{{ page.title }}</span>
