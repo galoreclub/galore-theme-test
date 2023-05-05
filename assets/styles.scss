@@ -28,6 +28,9 @@
   margin: auto;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .galore-button-md {
@@ -41,6 +44,9 @@
   color: white;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .galore-button-sm {
@@ -55,6 +61,9 @@
   margin: auto;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .galore-button:hover, .galore-button-md:hover, .galore-button-sm:hover {

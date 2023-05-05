@@ -2,6 +2,9 @@
 
 <div class="galore-banner section main">
   <div class="vid-wrapper">
+    {% if page.url == '/pages/authentication' %}
+      <img src="{{ "Main_Vid_6.gif" | asset_url }}" alt="">
+    {% endif %}
     {% if page.url == '/pages/how-it-works' %}
       <img src="{{ "Main_Vid_5.gif" | asset_url }}" alt="">
     {% endif %}
