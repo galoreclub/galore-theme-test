@@ -7,7 +7,7 @@
   overflow: hidden; 
   position: relative;   
   background-color: #000000;
-  .banner-gif {
+  .banner-img {
     width: 100vw;
     overflow: hidden;
   }
@@ -34,8 +34,8 @@
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 17px;
   text-transform: uppercase;
   color: #000000;
   flex: none;
@@ -115,6 +115,11 @@
         font-size: 14px;
       }
     }
+  }
+
+  .breadcrumbs {
+    font-size: 10px;
+    padding: 0.5em;
   }
 
   .passport-banner {

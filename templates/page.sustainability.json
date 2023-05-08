@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-banner",
+      "settings": {
+      }
+    },
+    "sustainability": {
+      "type": "main-sustainability",
+      "settings": {
+      }
+    }   
+  },
+  "order": [
+    "banner",
+    "sustainability"
+  ]
+}

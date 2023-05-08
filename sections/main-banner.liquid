@@ -2,6 +2,12 @@
 
 <div class="galore-banner section main">
   <div class="vid-wrapper">
+    {% if page.url == '/pages/sustainability' %}
+      <img
+        class="banner-img"
+        src="{{ "Sustainability-Banner.png" | asset_url }}"
+        alt="">
+    {% endif %}
     {% if page.url == '/pages/digital-passport' %}
       <div class="passport-banner">
         <div class="left">
@@ -21,19 +27,19 @@
     {% endif %}
     {% if page.url == '/pages/authentication' %}
       <img
-        class="banner-gif"
+        class="banner-img"
         src="{{ "Main_Vid_6.gif" | asset_url }}"
         alt="">
     {% endif %}
     {% if page.url == '/pages/how-it-works' %}
       <img
-        class="banner-gif"
+        class="banner-img"
         src="{{ "Main_Vid_5.gif" | asset_url }}"
         alt="">
     {% endif %}
     {% if page.url == '/pages/about-us' %}
       <img
-        class="banner-gif"
+        class="banner-img"
         src="{{ "Main_Vid_4.gif" | asset_url }}"
         alt="">
     {% endif %}

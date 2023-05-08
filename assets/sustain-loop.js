@@ -21,7 +21,6 @@ const frame3 = document.getElementById('frame-3');
 
 const frames = [frame1, frame2, frame3];
 
-const scrollbox = document.querySelector('.scroll-box');
 
 // // listeners
 // button1.addEventListener('click', selectFrame1)
@@ -43,7 +42,6 @@ function selectFrame2() {
   resetFrames();
   button2.classList.add('selected');
   button2txt.classList.add('selected');
-  scrollbox.classList.remove('hidden');
   frame2.classList.remove('inactive');
   frame2.classList.add('active');
 }
@@ -61,7 +59,6 @@ function resetButtons() {
   buttons.forEach((element) => {
     element.classList.remove('selected');
   })
-  scrollbox.classList.add('hidden');
 }
 
 function resetFrames() {
