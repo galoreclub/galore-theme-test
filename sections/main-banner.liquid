@@ -2,6 +2,12 @@
 
 <div class="galore-banner section main">
   <div class="vid-wrapper">
+    {% if page.url == '/pages/rent' %}
+      <img
+        class="banner-img"
+        src="{{ "Main_Vid_7.gif" | asset_url }}"
+        alt="">
+    {% endif %}
     {% if page.url == '/pages/sustainability' %}
       <img
         class="banner-img"

@@ -1,0 +1,59 @@
+{{ 'section-main-rent.scss.css' | asset_url | stylesheet_tag }}
+
+<div class="rent section-main">
+  <h2 class="heading1">coming soon...</h3>
+  <h3 class="heading2">How it Works</h2>
+  <div class="rent-body">
+    <div class="rent-body-top">
+      <div class="rent-button-list">
+        <div class="rent-button">
+          <span class="button-circle">1</span>
+          <div class="rent-button-text">
+            <h4>Pick a Handbag</h4>
+            <p>Select the handbag you want to rent and reserve it by paying a fee and providing your delivery and payment information.</p>
+          </div>
+        </div>
+        <div class="rent-button">
+          <span class="button-circle">2</span>
+          <div class="rent-button-text">
+            <h4>Use it</h4>
+            <p>You can use the handbag for the agreed rental period, typically ranging from a few days to a few weeks.</p>
+          </div>
+        </div>
+        <div class="rent-button">
+          <span class="button-circle">3</span>
+          <div class="rent-button-text">
+            <h4>Return and Repeat</h4>
+            <p>Then you can return it and choose to rent another handbag or purchase the handbag you just rented if you choose.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rent-body-bottom">
+      <h3 class="heading2">Why Rent?</h3>
+      <div class="wrapper">
+        <div class="rent-section" id="frame-1">
+          <div class="img-wrapper">
+            <img src="{{ "rent1.png" | asset_url }}" alt="">
+          </div>
+          <h4>variety</h4>
+          <p>All of our handbags are authenticated by experts to ensure that we carry only the highest quality products on our website. We are dedicated to transparency and quality, and we carry brands that exemplify superior quality and diligent craftsmanship.</p>
+        </div>
+        <div class="rent-section" id="frame-2">
+          <div class="img-wrapper">
+            <img src="{{ "rent2.png" | asset_url }}" alt="">
+          </div>
+          <h4>sustainability</h4>
+          <p>We encourage the reuse of secondhand items as an alternative to buying new. One of our core missions is to disrupt fast fashion, an industry led by extreme levels of waste. We are introducing alternative means of indulging in high-end bags that are superior in quality and are better assets.</p>
+        </div>
+        <div class="rent-section" id="frame-3">
+          <div class="img-wrapper">
+            <img src="{{ "rent3.png" | asset_url }}" alt="">
+          </div>
+          <h4>occasions</h4>
+          <p>Circular fashion is all about maximizing usage and minimising waste. We want to empower our customers to extend their handbag’s life through detailed care instructions and Galore’s own repair and maintenance services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
