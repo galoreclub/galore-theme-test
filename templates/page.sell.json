@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-banner",
+      "settings": {
+      }
+    },
+    "sell": {
+      "type": "main-sell",
+      "settings": {
+      }
+    }   
+  },
+  "order": [
+    "banner",
+    "sell"
+  ]
+}

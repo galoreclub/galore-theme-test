@@ -1,0 +1,98 @@
+{{ 'section-main-sell.scss.css' | asset_url | stylesheet_tag }}
+
+<div class="sell section-main">
+  <h2 class="heading1">Get Started</h2>
+  <div class="sell-body">
+    <div class="sell-body-top">
+      <div class="form-nav">
+        <div class="nav-btn">
+          <span>
+            <span></span>
+          </span>
+          <p>Information</p>
+        </div>
+        <div class="nav-btn">
+          <span>
+            <span class="hidden"></span>
+          </span>
+          <p>Specifications</p>
+        </div>
+        <div class="nav-btn">
+          <span>
+            <span class="hidden"></span>
+          </span>
+          <p>Verification</p>
+        </div>
+        <div class="nav-btn">
+          <span>
+            <span class="hidden"></span>
+          </span>
+          <p>Next Steps</p>
+        </div>
+      </div>
+      <form action="/" class="sell-form">
+        <input type="text" placeholder="FIRST NAME">
+        <input type="text" placeholder="SURNAME">
+        <input type="email" placeholder="EMAIL">
+        <input type="phone" placeholder="PHONE NUMBER">
+        <input type="text" placeholder="POSTCODE">
+        <div class="btn-wrapper">
+          <button class="galore-button-md" id="continue">continue</button>
+          <button class="galore-button-md-inv" id="skip-content">how it works</button>
+        </div>
+      </form>
+    </div>
+    <div class="sell-body-bottom">
+      <h2 class="heading1">Why Sell With Galore?</h3>
+      <div class="wrapper-top">
+        <div class="sell-section" id="frame-1">
+          <div class="img-wrapper">
+            <img src="{{ "sell1.png" | asset_url }}" alt="">
+          </div>
+          <h4>Quality of Products</h4>
+          <p>Galore is a reputable company that specializes in handbags and can offer high-quality products that are appealing to customers.</p>
+        </div>
+        <div class="sell-section" id="frame-2">
+          <div class="img-wrapper">
+            <img src="{{ "sell2.png" | asset_url }}" alt="">
+          </div>
+          <h4>Competitive Pricing</h4>
+          <p>Galore offers competitive pricing for our products, allowing you to profit higher than from other companies.</p>
+        </div>
+        <div class="sell-section" id="frame-3">
+          <div class="img-wrapper">
+            <img src="{{ "sell3.png" | asset_url }}" alt="">
+          </div>
+          <h4>Digital Passport</h4>
+          <p>Galore has a competitive edge allowing users to download a digital passport for each bag they order, creating a higher demand for our product and a more competitive market for yours.</p>
+        </div>
+      </div>
+      <div class="wrapper-bottom">
+        <div class="sell-button-list">
+          <div class="sell-button">
+            <span class="button-circle">1</span>
+            <div class="sell-button-text">
+              <h4>Pick a Handbag</h4>
+              <p>Select the handbag you want to sell and reserve it by paying a fee and providing your delivery and payment information.</p>
+            </div>
+          </div>
+          <div class="sell-button">
+            <span class="button-circle">2</span>
+            <div class="sell-button-text">
+              <h4>Use it</h4>
+              <p>You can use the handbag for the agreed sellal period, typically ranging from a few days to a few weeks.</p>
+            </div>
+          </div>
+          <div class="sell-button">
+            <span class="button-circle">3</span>
+            <div class="sell-button-text">
+              <h4>Return and Repeat</h4>
+              <p>Then you can return it and choose to sell another handbag or purchase the handbag you just selled if you choose.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="galore-button-md" id="return">get started</button>
+    </div>
+  </div>
+</div>
