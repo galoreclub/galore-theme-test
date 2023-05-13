@@ -29,6 +29,8 @@
 .section-main {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
   gap: 10px;
   width: 100%;
   height: 100%;
@@ -38,7 +40,7 @@
   .section-main {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-    gap: 10px;
+    gap: 6px;
     width: 100%;
     height: 100%;
   }
@@ -127,6 +129,11 @@
 
 .galore-button:hover, .galore-button-md:hover, .galore-button-sm:hover {
   background: #4A4A4A;
+}
+
+.utility-link {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .galore-button-md-inv:hover {

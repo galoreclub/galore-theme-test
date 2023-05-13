@@ -3,8 +3,10 @@
 .who-we-are {
   display: flex;
   flex-direction: row;
-  column-gap: 2.5em;
+  column-gap: 6em;
   justify-content: center;
+  margin: auto;
+  width: 100%;
   max-height: 100vh;
 }
 
@@ -13,7 +15,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 40vw;
+  width: 35vw;
   position: relative;
   animation: rotation 15s infinite linear;
 }
@@ -35,7 +37,7 @@
 }
 
 .circular-text {
-  width: 40vw;
+  width: 35vw;
   .circular-subheading {
     font-family: 'Helvetica';
     font-style: normal;
@@ -43,7 +45,7 @@
     font-size: 2em;
     text-transform: uppercase;
     color: #000000;
-    width: 100%;
+    width: 80%;
   }
   p {
     font-family: 'Helvetica';
@@ -90,16 +92,28 @@
 }
 
 @media screen and (max-width: 480px) {
+  .who-we-are {
+    column-gap: 1.25em;
+  }
+
+  .circular-image {
+    width: 45vw;
+  }
+
+  .circular-text {
+    width: 45vw;
+  }
   .circular-image-text {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .circular-text {
     .circular-subheading {
-      font-size: 16px;
+      font-size: 18px;
+      width: 100%;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 14px;
     }
   }

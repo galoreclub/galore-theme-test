@@ -3,6 +3,9 @@
 .how-we-do-it {
   display: flex;
   padding-bottom: 150px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   .wrapper {
     display: flex;
@@ -13,8 +16,8 @@
       font-family: 'FONTSPRING DEMO - The Seasons';
       font-style: normal;
       font-weight: 400;
-      font-size: 50px;
-      line-height: 60px;
+      font-size: 46px;
+      line-height: 4px;
       color: #000000;
     }
     .box {
@@ -55,8 +58,8 @@
         h3 {
           font-family: 'Helvetica';
           font-style: normal;
-          font-weight: 700;
-          font-size: 45px;
+          font-weight: bold;
+          font-size: 36px;
           margin-bottom: 0;
           text-transform: uppercase;
           color: #000000;
@@ -98,7 +101,7 @@
         flex-direction: column;
         row-gap: 50px;
         .left {
-          width: 100%;
+          width: 90vw;
           margin-bottom: 50px;
           .box {
             width: 70%;
@@ -111,7 +114,7 @@
           }
         }
         .right {
-          width: 80vw;
+          width: 90vw;
           margin: auto;
           padding: 0;
           h3 {

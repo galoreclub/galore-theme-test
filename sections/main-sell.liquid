@@ -1,6 +1,6 @@
 {{ 'section-main-sell.scss.css' | asset_url | stylesheet_tag }}
 
-<div class="sell section-main">
+<div class="sell section-main" id="get-started">
   <h2 class="heading1">Get Started</h2>
   <div class="sell-body">
     <div class="sell-body-top">
@@ -30,20 +30,23 @@
           <p>Next Steps</p>
         </div>
       </div>
-      <form action="/" class="sell-form">
+      <form action="#" class="sell-form">
         <input type="text" placeholder="FIRST NAME">
         <input type="text" placeholder="SURNAME">
         <input type="email" placeholder="EMAIL">
         <input type="phone" placeholder="PHONE NUMBER">
         <input type="text" placeholder="POSTCODE">
-        <div class="btn-wrapper">
-          <button class="galore-button-md" id="continue">continue</button>
-          <button class="galore-button-md-inv" id="skip-content">how it works</button>
-        </div>
       </form>
+      <div class="btn-wrapper">
+        <a class="galore-button-md" id="continue">continue</a>
+        <a
+          rel="noopener"
+          href="#how-it-works"
+          class="galore-button-md-inv">how it works</a>
+      </div>
     </div>
     <div class="sell-body-bottom">
-      <h2 class="heading1">Why Sell With Galore?</h3>
+      <h3 class="heading2">Why Sell With Galore?</h3>
       <div class="wrapper-top">
         <div class="sell-section" id="frame-1">
           <div class="img-wrapper">
@@ -67,6 +70,7 @@
           <p>Galore has a competitive edge allowing users to download a digital passport for each bag they order, creating a higher demand for our product and a more competitive market for yours.</p>
         </div>
       </div>
+      <h3 class="heading2" id="how-it-works">How it Works</h2>
       <div class="wrapper-bottom">
         <div class="sell-button-list">
           <div class="sell-button">
@@ -92,7 +96,10 @@
           </div>
         </div>
       </div>
-      <button class="galore-button-md" id="return">get started</button>
+      <a
+        rel="noopener"
+        href="#get-started"
+        class="galore-button-md">get started</a>
     </div>
   </div>
 </div>
