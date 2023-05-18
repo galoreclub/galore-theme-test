@@ -31,19 +31,9 @@
   padding-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
-  gap: 10px;
+  gap: 2.5rem;
   width: 100%;
   height: 100%;
-}
-
-@media screen and (max-width: 480px) {
-  .section-main {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    gap: 6px;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .galore-button {
@@ -140,6 +130,178 @@
   background: #EBEBEB;
 }
 
+// Buy Button dropdown
+.buy-dropdown-btn {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: rgba(18, 18, 18, 0.75);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.buy-dropdown.active > .buy-dropdown-btn,
+.buy-dropdown-btn:hover {
+  color: black;
+}
+
+.buy-dropdown {
+  position: relative;
+}
+
+.buy-dropdown-menu {
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  top: calc(100% + .25rem);
+  padding: 1.5rem;
+  overflow-x: scroll;
+  background-color: white;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.buy-dropdown.active > .buy-dropdown-btn + .buy-dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.information-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  gap: 1.25rem;
+  z-index: 100;
+  width: 85vw;
+  height: auto;
+  .buy-dropdown-menu-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+.buy-dropdown-heading {
+  font-family: 'Helvetica';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.buy-dropdown-links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, max-content);
+  grid-template-rows: repeat(10, auto);
+  grid-gap: 1.25rem;
+  margin-top: 1rem;
+  max-height: 70vh;
+  a {
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+.buy-dropdown-links.new-in {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    .link-img {
+      img {
+        object-fit: contain;
+        max-width: 100px;
+      }
+    }
+    .link-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none !important;
+      font-size: 15px;
+      max-width: 150px;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-main {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .buy-dropdown-menu.information-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    width: 100%;
+    overflow-y: scroll;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    .buy-dropdown-menu-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex: 1 1 auto;
+      width: 30vw;
+      height: 45vh;
+      .buy-dropdown-heading {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .buy-dropdown-links {
+    display: flex;
+    overflow-y: scroll;
+    justify-content: flex-start;
+    flex-direction: column;
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .buy-dropdown-links.new-in {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60vh;
+    .link-img {
+      img {
+        object-fit: contain;
+        max-width: 30vw !important;
+      }
+    }
+    .link-text {
+      font-size: 13px;
+    }
+  }
+}
+
+// Font styles
 .D101 {
   font-family: 'FONTSPRING DEMO - The Seasons';
   font-style: normal;

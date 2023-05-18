@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     .box {
-      width: 40%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -19,15 +19,15 @@
         font-family: 'FONTSPRING DEMO - The Seasons';
         font-style: normal;
         font-weight: 400;
-        font-size: 33px;
-        line-height: 36px;
+        font-size: 30px;
+        line-height: 33px;
       }
       p {
         font-family: 'Helvetica';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 27px;
       }
     }
     img {

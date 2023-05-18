@@ -120,12 +120,14 @@
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'header-dropdown.js' | asset_url }}" defer="defer"></script>
 {%- if settings.cart_type == "drawer" -%}
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
   <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
@@ -167,6 +169,90 @@
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
                   <ul class="menu-drawer__menu has-submenu list-menu" role="list">
+                    <li>
+                      <div class="menu-drawer__menu-item list-menu__item link link--text focus-inset buy-dropdown" data-dropdown>
+                        <span class="buy-dropdown-btn" data-dropdown-button>BUY</span>
+                        <div class="buy-dropdown-menu information-grid">
+                          <div class="buy-dropdown-menu-section">
+                            <div class="buy-dropdown-heading">popular</div>
+                            <div class="buy-dropdown-links">
+                              <a href="#" class="link">Balenciaga</a>
+                              <a href="#" class="link">Bottega Veneta</a>
+                              <a href="#" class="link">Celine</a>
+                              <a href="/collections/chanel" class="link">Chanel</a>
+                              <a href="#" class="link">Dior</a>
+                              <a href="#" class="link">Goyard</a>
+                              <a href="#" class="link">Gucci</a>
+                              <a href="#" class="link">Hermes</a>
+                              <a href="#" class="link">Prada</a>
+                              <a href="#" class="link">Yves Saint Laurent</a>
+                            </div>
+                          </div>
+                          <div class="buy-dropdown-menu-section">
+                            <div class="buy-dropdown-heading">alphabetical</div>
+                            <div class="buy-dropdown-links">
+                              <a href="#" class="link">3.1 Phillip Lim</a>
+                              <a href="#" class="link">Acne Studios</a>
+                              <a href="#" class="link">Alexander McQueen</a>
+                              <a href="#" class="link">Ann Demeulemeester</a>
+                              <a href="#" class="link">Balenciaga</a>
+                              <a href="#" class="link">Balmain</a>
+                              <a href="#" class="link">Bottega Veneta</a>
+                              <a href="#" class="link">Celine</a>
+                              <a href="/collections/chanel" class="link">Chanel</a>
+                              <a href="#" class="link">Chlo&eacute;</a>
+                              <a href="#" class="link">Dior</a>
+                              <a href="#" class="link">Dior</a>
+                              <a href="#" class="link">Dolce & Gabbana</a>
+                              <a href="#" class="link">Fendi</a>
+                              <a href="#" class="link">Ferragamo</a>
+                              <a href="#" class="link">Givenchy</a>
+                              <a href="#" class="link">Goyard</a>
+                              <a href="#" class="link">Gucci</a>
+                              <a href="#" class="link">Hermes</a>
+                              <a href="#" class="link">Issey Miyake</a>
+                              <a href="#" class="link">Jacquemus</a>
+                              <a href="#" class="link">Jil Sander</a>
+                              <a href="#" class="link">Junya Watanabe</a>
+                              <a href="#" class="link">JW Anderson</a>
+                              <a href="#" class="link">Kenzo</a>
+                              <a href="#" class="link">Lanvin</a>
+                              <a href="#" class="link">Loewe</a>
+                              <a href="#" class="link">Louis Vuitton</a>
+                              <a href="#" class="link">Maison Margiela</a>
+                              <a href="#" class="link">Miu Miu</a>
+                              <a href="#" class="link">Moschino</a>
+                              <a href="#" class="link">Off-White</a>
+                              <a href="#" class="link">Proenza Schouler</a>
+                              <a href="#" class="link">Prada</a>
+                              <a href="#" class="link">Raf Simons</a>
+                              <a href="#" class="link">Rick Owens</a>
+                              <a href="#" class="link">Valentino</a>
+                              <a href="#" class="link">Versace</a>
+                              <a href="#" class="link">Vivienne Westwood</a>
+                              <a href="#" class="link">Yves Saint Laurent</a>
+                            </div>
+                          </div>
+                          <div class="buy-dropdown-menu-section">
+                            <div class="buy-dropdown-heading">new in</div>
+                            <div class="buy-dropdown-links new-in">
+                              {% for product in collections['new-in'].products %}
+                                <a href="{{ product.url }}">
+                                  <div class="link-img">
+                                    <img src="{{ product.featured_image | product_img_url: 'small' }}" alt="{{ product.title | escape  }}">
+                                  </div>
+                                  <div class="link-text">
+                                    <p>{{ product.vendor }}</p>
+                                    <p>{{ product.title }}</p>
+                                    <p>{{ product.price }}</p>
+                                  </div>
+                                </a>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                     {%- for link in section.settings.menu.links -%}
                       <li>
                         {%- if link.links != blank -%}
@@ -466,6 +552,11 @@
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
+            <li>
+              <div class="header__menu-item list-menu__item link link--text focus-inset">
+                <span class="link" data-dropdown-button>BUY</span>
+              </div>
+            </li>
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
@@ -516,6 +607,90 @@
       {%- elsif section.settings.menu_type_desktop != 'drawer' -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
+            <li>
+              <div class="header__menu-item list-menu__item link link--text focus-inset buy-dropdown" data-dropdown>
+                <span class="buy-dropdown-btn" data-dropdown-button>BUY</span>
+                <div class="buy-dropdown-menu information-grid">
+                  <div class="buy-dropdown-menu-section">
+                    <div class="buy-dropdown-heading">popular</div>
+                    <div class="buy-dropdown-links">
+                      <a href="#" class="link">Balenciaga</a>
+                      <a href="#" class="link">Bottega Veneta</a>
+                      <a href="#" class="link">Celine</a>
+                      <a href="/collections/chanel" class="link">Chanel</a>
+                      <a href="#" class="link">Dior</a>
+                      <a href="#" class="link">Goyard</a>
+                      <a href="#" class="link">Gucci</a>
+                      <a href="#" class="link">Hermes</a>
+                      <a href="#" class="link">Prada</a>
+                      <a href="#" class="link">Yves Saint Laurent</a>
+                    </div>
+                  </div>
+                  <div class="buy-dropdown-menu-section">
+                    <div class="buy-dropdown-heading">alphabetical</div>
+                    <div class="buy-dropdown-links">
+                      <a href="#" class="link">3.1 Phillip Lim</a>
+                      <a href="#" class="link">Acne Studios</a>
+                      <a href="#" class="link">Alexander McQueen</a>
+                      <a href="#" class="link">Ann Demeulemeester</a>
+                      <a href="#" class="link">Balenciaga</a>
+                      <a href="#" class="link">Balmain</a>
+                      <a href="#" class="link">Bottega Veneta</a>
+                      <a href="#" class="link">Celine</a>
+                      <a href="/collections/chanel" class="link">Chanel</a>
+                      <a href="#" class="link">Chlo&eacute;</a>
+                      <a href="#" class="link">Dior</a>
+                      <a href="#" class="link">Dior</a>
+                      <a href="#" class="link">Dolce & Gabbana</a>
+                      <a href="#" class="link">Fendi</a>
+                      <a href="#" class="link">Ferragamo</a>
+                      <a href="#" class="link">Givenchy</a>
+                      <a href="#" class="link">Goyard</a>
+                      <a href="#" class="link">Gucci</a>
+                      <a href="#" class="link">Hermes</a>
+                      <a href="#" class="link">Issey Miyake</a>
+                      <a href="#" class="link">Jacquemus</a>
+                      <a href="#" class="link">Jil Sander</a>
+                      <a href="#" class="link">Junya Watanabe</a>
+                      <a href="#" class="link">JW Anderson</a>
+                      <a href="#" class="link">Kenzo</a>
+                      <a href="#" class="link">Lanvin</a>
+                      <a href="#" class="link">Loewe</a>
+                      <a href="#" class="link">Louis Vuitton</a>
+                      <a href="#" class="link">Maison Margiela</a>
+                      <a href="#" class="link">Miu Miu</a>
+                      <a href="#" class="link">Moschino</a>
+                      <a href="#" class="link">Off-White</a>
+                      <a href="#" class="link">Proenza Schouler</a>
+                      <a href="#" class="link">Prada</a>
+                      <a href="#" class="link">Raf Simons</a>
+                      <a href="#" class="link">Rick Owens</a>
+                      <a href="#" class="link">Valentino</a>
+                      <a href="#" class="link">Versace</a>
+                      <a href="#" class="link">Vivienne Westwood</a>
+                      <a href="#" class="link">Yves Saint Laurent</a>
+                    </div>
+                  </div>
+                  <div class="buy-dropdown-menu-section">
+                    <div class="buy-dropdown-heading">new in</div>
+                    <div class="buy-dropdown-links new-in">
+                      {% for product in collections['new-in'].products %}
+                        <a href="{{ product.url }}">
+                          <div class="link-img">
+                            <img src="{{ product.featured_image | product_img_url: 'small' }}" alt="{{ product.title | escape  }}">
+                          </div>
+                          <div class="link-text">
+                            <p>{{ product.vendor }}</p>
+                            <p>{{ product.title }}</p>
+                            <p>{{ product.price }}</p>
+                          </div>
+                        </a>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </li>
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
@@ -698,7 +873,7 @@
       </details-modal>
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset">
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
@@ -719,7 +894,7 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--wish link focus-inset" id="wish-icon">
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--wish link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" id="wish-icon">
         {% render 'icon-wishlist' %}
         <span class="visually-hidden">
           {%- liquid

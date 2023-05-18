@@ -241,4 +241,9 @@
       width: 100% !important;
     }
   }
+
+  .input-wrapper {
+    flex-direction: column !important;
+    row-gap: 0.5em;
+  }
 }

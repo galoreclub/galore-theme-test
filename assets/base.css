@@ -3147,3 +3147,10 @@ details-disclosure > details {
     100% { transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2); }
   }
 }
+
+.card__inner .media--transparent {
+  background-color: #fff;
+}
+.card__inner .media--transparent img.motion-reduce {
+  object-fit: contain;
+}

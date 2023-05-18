@@ -37,6 +37,8 @@
 }
 
 .collection-hero__title {
+  font-family: "FONTSPRING DEMO - The Seasons";
+  font-size: 40px;
   margin: 2.5rem 0;
 }
 
@@ -55,6 +57,7 @@
   }
 
   .collection-hero__description {
+    font-family: "Helvetica";
     max-width: 66.67%;
   }
 
