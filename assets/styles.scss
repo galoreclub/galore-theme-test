@@ -223,6 +223,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none !important;
+    color: inherit !important;
     .link-img {
       img {
         object-fit: contain;
@@ -234,6 +235,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      color: inherit !important;
       text-decoration: none !important;
       font-size: 15px;
       max-width: 150px;
@@ -289,6 +291,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 60vh;
+    a {
+      text-decoration: none;
+    }
     .link-img {
       img {
         object-fit: contain;

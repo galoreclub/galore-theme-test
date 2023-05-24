@@ -244,7 +244,12 @@
                                   <div class="link-text">
                                     <p>{{ product.vendor }}</p>
                                     <p>{{ product.title }}</p>
-                                    <p>{{ product.price }}</p>
+                                    {% render 'price', 
+                                      product: product,
+                                      use_variant: true,
+                                      show_badges: true,
+                                      price_class: ''
+                                    %}
                                   </div>
                                 </a>
                               {% endfor %}
