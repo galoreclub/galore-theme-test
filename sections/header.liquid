@@ -313,6 +313,16 @@
                         {%- endif -%}
                       </li>
                     {%- endfor -%}
+                    <li>
+                      <a href="/pages/digital-passport" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                        DIGITAL PASSPORT
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/pages/sustainability" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                        SUSTAINABILITY
+                      </a>
+                    </li>
                   </ul>
                 </nav>
                 <div class="menu-drawer__utility-links">
@@ -787,6 +797,14 @@
           </localization-form>
         {%- endif -%}
       </div>
+      
+      <a class="header__menu-item list-menu__item link link--text focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" {% if link.current %} aria-current="page"{% endif %} href="/pages/digital-passport">
+        <span {%- if link.current %} class="header__active-menu-item"{% endif %}>DIGITAL PASSPORT</span>
+      </a>
+      <a class="header__menu-item list-menu__item link link--text focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" {% if link.current %} aria-current="page"{% endif %} href="/pages/sustainability">
+        <span {%- if link.current %} class="header__active-menu-item"{% endif %}>SUSTAINABILITY</span>
+      </a>
+
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">

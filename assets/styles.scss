@@ -246,6 +246,19 @@
   }
 }
 
+.coming-soon {
+  .heading1 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .section-main {
     padding-top: 1.25rem;

@@ -254,6 +254,26 @@
   animation: fadeIn 1s ease-in-out;
 }
 
+.galore-button {
+  padding: 10px 60px;
+  gap: 10px;
+  width: 276px;
+  height: 57px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: #000000;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
 @keyframes grow {
   0% { font-size: 20px; }
   100% { font-size: 24px; }
