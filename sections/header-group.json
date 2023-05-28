@@ -6,7 +6,7 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-center",
-        "menu": "header-menu",
+        "menu": "header-menu-left",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
