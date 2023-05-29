@@ -384,7 +384,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
         display: flex;
         flex-direction: column;
         margin: auto;
-        width: 1440px;
+        width: 100%;
         min-height: 100%;
         font-size: 1.5rem;
         letter-spacing: 0.06rem;
@@ -392,18 +392,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
-      }
-
-      @media screen and (max-width: 1440px) {
-        body {
-          width: 1080px;
-        }
-      }
-
-      @media screen and (max-width: 480px) {
-        body {
-          width: 360px;
-        }
       }
     {% endstyle %}
 
@@ -440,9 +428,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  
-  {% render 'shogun-head' %}
-</head>
 
-  <body class="gradient"><div class="pagefly-container">{{ content_for_layout }}</div></body>
+    {% render 'shogun-head' %}
+  </head>
+
+  <body class="gradient">
+    <div class="pagefly-container">{{ content_for_layout }}</div>
+  </body>
 </html>
